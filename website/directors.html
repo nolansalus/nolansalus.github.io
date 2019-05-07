@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Movie Site</title>
+<head>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+<style>
+#nav_menu ul {
+list-style-type: none;
+position: relative; }
+#nav_menu ul li { float: left; }
+#nav_menu ul ul {
+display: none;
+position: absolute;
+top: 100%; }
+#nav_menu ul ul li {
+float: none;
+position: relative; }
+#nav_menu ul ul li ul {
+position: absolute;
+left: 100%;
+top: 0; }
+#nav_menu ul li.lastitem ul li ul {
+position: absolute;
+left: -100%;
+top: 0; }
+#nav_menu ul li:hover > ul { display: block; }
+#nav_menu > ul::after {
+content: "";
+clear: both;
+display: block; }
+
+#nav_menu ul {
+margin: 0;
+padding: 0; }
+#nav_menu ul li a {
+text-align: center;
+display: block;
+width: 120px;
+padding: 4px;
+text-decoration: none;
+background-color: red;
+color: white;
+font-weight: bold; }
+#nav_menu ul li.lastitem a {
+width: 178px; }
+#nav_menu ul li a.current {
+color: yellow; }
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+background-color: gray; }
+
+
+
+
+p.directors {
+font-family: "Times New Roman", Times, serif;
+text-align: center;
+}
+p.opinion { text-align: center; }
+
+
+h1 {
+font-family: "Times New Roman", Times, serif;
+text-align: center;
+}
+
+h2 {text-align: center;}
+
+h3 { text-align: center; }
+
+img {  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;}
+</style>
+</head>
+<body>
+<nav id="nav_menu">
+  <ul>
+    <li><a href="homepage.html">Home</a> </li>
+    
+<li><a href="genres.html">Genres</a>
+      <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Comedy</a></li>
+        <li><a href="#">Thriller</a></li>
+      </ul>
+    </li>
+<li class="lastitem"><a href="directors.html">Directors</a>
+    <ul>
+      <li><a href="#">Denis Villeneuve</a></li>
+      <li><a href="#">Martin Scorcese</a></li>
+      <li><a href="#">Quentin Tarantino</a></li>
+      <li><a href="#">Christopher Nolan</a></li>
+      </ul>
+    </li>
+<li><a href="moviegenerator.html">Movie Generator</a></li>
+<li><a href="reviews.html">Reviews</a>
+<li><a href="news.html">News</a>
+
+</ul></nav>
+
+
+
+<h2>Directors<br></h2> 
+<p class='opinion'><i>Here you can check out some of my favorite directors in the film industry, some well known some not so.</i></p>
+<p class='directors'>
+<strong><img src="https://www.neh.gov/sites/default/files/styles/featured_image_page/public/2018-07/martin-scorsese_0.jpg?h=68b97a5f&itok=XQTBU5am" alt="Martin" style="width:260px;">Martin Scorcese:</strong> <br> <i>Goodfellas, Taxi Driver, The Departed</i><br><br><br>
+<strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg/220px-Quentin_Tarantino_by_Gage_Skidmore.jpg" alt="Quentin" style="width:200px;">Quentin Tarantino:</strong> <br> <i>Pulp Fiction, Django Unchained, Kill Bill</i><br><br><br>
+<strong><img src="https://pmcvariety.files.wordpress.com/2018/05/nolan.jpg?w=1000" alt="Christopher" style="width:260px;">Christopher Nolan:</strong> <br> <i>Inception, The Dark Knight, Memento</i><br><br><br>
+<strong><img src="https://affif-sitepublic-media-prod.s3.amazonaws.com/film_film/0001/58/thumb_57783_film_film_384x485.jpeg" alt="Denis" style="width:200px;">Denis Villeneuve:</strong> <br> <i>Prisoners, Sicario, Arrival</i><br><br><br>
+</p>
+</body>
+</html>
+<!-- DEVELOPER: Nolan Salus, IS117-02, Spring 2019 ->
