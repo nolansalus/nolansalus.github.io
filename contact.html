@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Movie Site</title>
+<title>Reel Talk</title>
 <head>
 <style>
 body {
@@ -50,6 +50,40 @@ width: 178px; }
 color: yellow; }
 #nav_menu ul li a:hover, #nav_menu ul li a:focus {
 background-color: gray; }
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+}
 
 
 p.opinion { text-align: center; }
@@ -105,6 +139,32 @@ img {  display: block;
 <img src="https://www.lifewire.com/thmb/NQvDtzyDTej0Gs5CMZyUadGMt78=/1732x1155/filters:fill(auto,1)/iStock-528952946-email-spam-58caf3ef3df78c3c4f13bade.png" alt="Contact" style="width:260px;">
 <br>
 <p>My email is nhs32@rutgers.edu</p>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">E-mail Address</label>
+    <input type="text" id="email" name="E-mail Address" placeholder="Your email address..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">United Kingdom</option>
+      <option value="usa">Dubai</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 
 </body>
 </html>
